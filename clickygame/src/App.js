@@ -16,15 +16,20 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
-      {this.state.images.map(image => (
-        <ElfCard
-          id={image.id}
-          key={image.id}
-          name={image.name}
-          image={image.image}
-        />
-      ))}
+      <div className="container">
+        <div className="grid">
+          <div className="row">
+              {this.state.images.map(image => (
+                <ElfCard
+                  className="col-xs-2 col-sm-3"
+                  id={image.id}
+                  key={image.id}
+                  name={image.name}
+                  image={image.image}
+                />
+              ))}
+          </div>
+        </div>
       </div>
     );
   }
