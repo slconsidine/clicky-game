@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "name": "Buddy",
+        "image": "https://bloximages.newyork1.vip.townnews.com/eastoregonian.com/content/tncms/assets/v3/editorial/6/1a/61a10034-4b23-5968-afef-d26c4b71f2f1/5bf3a9c11e2d2.image.jpg?resize=628%2C630"
+    }, 
+    {
+        "id": 2,
+        "name": "Jovie",
+        "image": "https://i1.wp.com/tbkmagazine.com/wp-content/uploads/2015/12/zooey-deschanel-elf-jovie.jpg?fit=1280%2C720&ssl=1"
+    },
+    {
+        "id": 3,
+        "name": "Papa Elf",
+        "image": "https://vignette.wikia.nocookie.net/christmasspecials/images/e/ed/PapaElf.jpg/revision/latest/top-crop/width/360/height/450?cb=20101209222526"
+    },
+    {
+        "id": 4,
+        "name": "Walter",
+        "image": "https://vignette.wikia.nocookie.net/christmasspecials/images/6/6f/Elf_Walter_Hobbs.jpg/revision/latest?cb=20191218004542"
+    }, 
+    {
+        "id": 5,
+        "name": "Emily",
+        "image": "https://static0.srcdn.com/wordpress/wp-content/uploads/2019/11/emily-hobbs-elf-Cropped.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Michael",
+        "image": "https://i2-prod.mirror.co.uk/incoming/article7056457.ece/ALTERNATES/s615/Daniel-Tay-in-Elf.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Santa",
+        "image": "https://img1.looper.com/img/gallery/popular-movie-santas-ranked-worst-to-best/intro-1574368848.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Miles Finch",
+        "image": "https://vignette.wikia.nocookie.net/christmasspecials/images/f/f4/U10251_slide_21226.jpg/revision/latest?cb=20191122161701"
+    },
+    {
+        "id": 9,
+        "name": "Dr. Leonardo",
+        "image": "https://vignette.wikia.nocookie.net/elf/images/f/f3/Drleonardo.jpg/revision/latest/scale-to-width-down/340?cb=20181203125908"
+    },
+    {
+        "id": 10,
+        "name": "Gimbel's Manager",
+        "image": "https://www.lifeandstylemag.com/wp-content/uploads/2018/12/Faizon-Love-ELF.jpg?resize=1200%2C720"
+    },
+    {
+        "id": 11,
+        "name": "Leon the Snowman",
+        "image": "https://vignette.wikia.nocookie.net/elf/images/c/c0/Leon.jpeg/revision/latest/scale-to-width-down/340?cb=20171206233458"
+    },
+    {
+        "id": 12,
+        "name": "Mr. Narwhal",
+        "image": "https://vignette.wikia.nocookie.net/elf/images/e/e2/Narwhal-smileandwave-0-870-0-0.jpg/revision/latest/scale-to-width-down/340?cb=20190126062244"
+    },
+    {
+        "id": 13,
+        "name": "Gimbel's Fake Santa",
+        "image": "https://vignette.wikia.nocookie.net/warner-bros-entertainment/images/1/14/FakeSanta.jpg/revision/latest?cb=20180803191815"
+    },
+    {
+        "id": 14,
+        "name": "Deb",
+        "image": "https://themaindamie.files.wordpress.com/2016/12/amy_elf_002.jpg?w=616"
+    },
+    {
+        "id": 15,
+        "name": "Susan Wells",
+        "image": "https://vignette.wikia.nocookie.net/elf/images/d/df/Cf37c3b8-b2a0-4612-815f-6524d7cf6dfb.png/revision/latest/window-crop/width/200/x-offset/0/y-offset/0/window-width/305/window-height/305?cb=20181107234232"
+    },
+    {
+        "id": 16,
+        "name": "Fulton Greenway",
+        "image": "https://vignette.wikia.nocookie.net/elf/images/f/f1/Screen-Shot-2013-11-27-at-23.56.43-1-.png/revision/latest/scale-to-width-down/340?cb=20151025194850"
+    }
+]
