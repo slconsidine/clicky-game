@@ -6,18 +6,38 @@ class App extends Component {
   state = {
     images,
     score: 0,
+    topScore: 0,
     chosen: [],
     newPick: ""
   };
 
+  newTopScore = () => {
+    if (this.state.score < this.state.topScore) {
+      console.log("top score is higher");
+    } else {
+      this.setState({ topScore: this.state.topScore + 1});
+    }
+  }
+
   checkGame = (newPick) => {
     console.log(newPick);
-    for (var i=0; i<newPick.length; i++) {
-      if (this.state.chosen.includes(newPick[i])) {
-        console.log("character has already been added");
-      } else {
-        console.log("added new character");
-      };
+    // checks if user has won game yet
+    if((this.state.images.length - 1)=== this.state.score) {
+      console.log("winner")
+    } else {
+      // if they have not won the game: checks if their chosen pic has been selected already or not
+      for (var i=0; i<newPick.length; i++) {
+        if (this.state.chosen.includes(newPick[i])) {
+          console.log("character has already been added");
+          console.log("You already picked " + newPick[i].name + ". Try again!");
+          this.setState({ score: 0 });
+          this.setState({ chosen: [] });
+        } else {
+          console.log("added new character");
+          this.setState({ score: this.state.score + 1 });
+          this.newTopScore();
+        };
+      }
     }
   };
   
@@ -35,16 +55,12 @@ class App extends Component {
     console.log(this.state.chosen);
     this.checkGame(newPick);
   };
-  
-  
-  handleIncrement = () => {
-    this.setState({ score: this.state.score + 1 });
-    console.log(this.state.score);
-  }
 
   render() {
     return (
       <div className="container">
+        <p>{this.state.score}</p>
+        <p>{this.state.topScore}</p>
         <div className="grid">
           <div className="row">
               {this.state.images.map(image => (
