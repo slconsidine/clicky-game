@@ -10,6 +10,17 @@ class App extends Component {
     newPick: ""
   };
 
+  checkGame = (newPick) => {
+    console.log(newPick);
+    for (var i=0; i<newPick.length; i++) {
+      if (this.state.chosen.includes(newPick[i])) {
+        console.log("character has already been added");
+      } else {
+        console.log("added new character");
+      };
+    }
+  };
+  
   chosenElf = id => {
     const newPick = this.state.images.filter(image => image.id === id);
     this.setState({ newPick: newPick });
@@ -21,23 +32,10 @@ class App extends Component {
         newPick: ""
       }
     });
-
     console.log(this.state.chosen);
+    this.checkGame(newPick);
   };
-
-  // checkGame = (newPick) => {
-  //   if (this.state.chosen.includes(newPick)) {
-  //     console.log("character has already been added");
-  //   } else {
-  //     console.log("added new character");
-  //   };
-  // }
   
-  // chosenElf = id => {
-  //   const newPick = this.state.images.filter(picked => picked.id === id);
-  //   this.setState({ chosen: [newPick] });
-  //   this.checkGame(newPick);
-  // }
   
   handleIncrement = () => {
     this.setState({ score: this.state.score + 1 });
