@@ -42,6 +42,7 @@ class App extends Component {
         if (this.state.chosen.includes(newPick[i])) {
           console.log("character has already been added");
           console.log("You already picked " + newPick[i].name + ". Try again!");
+          alert(`You already picked ${newPick[i].name}. Try again!`)
           this.setState({ score: 0 });
           this.setState({ chosen: [] });
         } else {
@@ -72,8 +73,8 @@ class App extends Component {
     const shuffledPosts = shuffleArray(images);
     return (
       <div className="container">
-        <p>{this.state.score}</p>
-        <p>{this.state.topScore}</p>
+        <p>Your Score: {this.state.score}</p>
+        <p>High Score: {this.state.topScore}</p>
         <div className="grid">
           <div className="row">
               {shuffledPosts.map(image => (
