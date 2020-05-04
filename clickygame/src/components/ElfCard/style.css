@@ -3,11 +3,11 @@
     border-radius: 2px;
     height: 280px;
     width: 280px;
-    margin: 2px;
 }
 
 img {
-    height: 250px;
-    width: 250px;
+    height: 280px;
+    width: 280px;
     object-fit: cover;
+    margin: 2px;   
 }

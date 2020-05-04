@@ -1,0 +1,26 @@
+span {
+    width: 50%;
+    padding: 0px 50px;
+    font-size: 24px;
+}
+
+.jumbotron {
+    /* background-image: url(https://wallpaperaccess.com/full/883368.jpg); */
+    background-repeat: no-repeat;
+    text-shadow: 2px 2px 5px white;
+    /* background-color: #FDFDFD; */
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color:#E9ECEF;
+    color: black;
+}
+
+body {
+    margin-bottom: 80px;
+}

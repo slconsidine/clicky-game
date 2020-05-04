@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ElfCard from "./components/ElfCard";
 import images from "./images.json";
+import "./style.css";
 
 function shuffleArray(images) {
   let i = images.length - 1;
@@ -36,6 +37,9 @@ class App extends Component {
     // checks if user has won game yet
     if((this.state.images.length - 1)=== this.state.score) {
       console.log("winner")
+      alert("Congratulations! You win!");
+      this.setState({ score: 0 });
+      this.setState({ chosen: [] });
     } else {
       // if they have not won the game: checks if their chosen pic has been selected already or not
       for (var i=0; i<newPick.length; i++) {
@@ -72,9 +76,16 @@ class App extends Component {
   render() {
     const shuffledPosts = shuffleArray(images);
     return (
+      <>
+      <div className="jumbotron text-center">
+        <h1 id="text">Elf Memory Game</h1>
+        <h3 id="text">Click on an image to earn points, but don't click on the same one more than once!</h3>
+        <div className="scores" id="text">
+          <span>Your Score: {this.state.score}</span>
+          <span>High Score: {this.state.topScore}</span>  
+        </div>
+      </div>
       <div className="container">
-        <p>Your Score: {this.state.score}</p>
-        <p>High Score: {this.state.topScore}</p>
         <div className="grid">
           <div className="row">
               {shuffledPosts.map(image => (
@@ -89,8 +100,12 @@ class App extends Component {
               ))}
           </div>
         </div>
-        <h1 onClick={this.handleIncrement}>click</h1>
       </div>
+      <footer class="text-center">
+          <span>Your Score: {this.state.score}</span>
+          <span>High Score: {this.state.topScore}</span>  
+      </footer>
+      </>
     );
   }
 }
