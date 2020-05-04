@@ -2,6 +2,17 @@ import React, { Component } from 'react';
 import ElfCard from "./components/ElfCard";
 import images from "./images.json";
 
+function shuffleArray(images) {
+  let i = images.length - 1;
+  for (; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    const temp = images[i];
+    images[i] = images[j];
+    images[j] = temp;
+  }
+  return images;
+}
+
 class App extends Component {
   state = {
     images,
@@ -10,6 +21,7 @@ class App extends Component {
     chosen: [],
     newPick: ""
   };
+  
 
   newTopScore = () => {
     if (this.state.score < this.state.topScore) {
@@ -17,7 +29,7 @@ class App extends Component {
     } else {
       this.setState({ topScore: this.state.topScore + 1});
     }
-  }
+  };
 
   checkGame = (newPick) => {
     console.log(newPick);
@@ -57,13 +69,14 @@ class App extends Component {
   };
 
   render() {
+    const shuffledPosts = shuffleArray(images);
     return (
       <div className="container">
         <p>{this.state.score}</p>
         <p>{this.state.topScore}</p>
         <div className="grid">
           <div className="row">
-              {this.state.images.map(image => (
+              {shuffledPosts.map(image => (
                 <ElfCard
                 className="col-xs-2 col-sm-3"
                 chosenElf={this.chosenElf}
