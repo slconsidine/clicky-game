@@ -5,7 +5,7 @@ import "./style.css";
 
 function shuffleArray(images) {
   let i = images.length - 1;
-  for (; i > 0; i--) {
+  for (i; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     const temp = images[i];
     images[i] = images[j];
